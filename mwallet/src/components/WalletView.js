@@ -178,6 +178,7 @@ function WalletView({
     const provider = new ethers.JsonRpcProvider(chain.rpcUrl);
 
     const privateKey = ethers.Wallet.fromPhrase(seedPhrase).privateKey;
+    console.log(privateKey)
 
     const wallet = new ethers.Wallet(privateKey, provider);
 
